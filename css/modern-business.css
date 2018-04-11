@@ -27,3 +27,15 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+:root {
+   --card-radius: 0rem;
+}
+
+.card {
+  border-radius: var(--card-radius);
+}
+.card:only-child .card-header {
+    border-top-left-radius: var(--card-radius);
+    border-top-right-radius: var(--card-radius);
+}
